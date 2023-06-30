@@ -1,4 +1,4 @@
-package med.voll.api.Controller;
+package med.voll.api;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
