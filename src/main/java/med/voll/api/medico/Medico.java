@@ -5,7 +5,8 @@ import lombok.AllArgsConstructor;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
-import med.voll.api.controller.medico.DadosCadastroMedico;
+import med.voll.api.controller.medico.DTO.DadosAtualizacaoMedico;
+import med.voll.api.controller.medico.DTO.DadosCadastroMedico;
 import med.voll.api.endereco.Endereco;
 import med.voll.api.enums.Especialidades;
 import org.springframework.data.annotation.Id;
@@ -18,7 +19,7 @@ import org.springframework.data.annotation.Id;
 @EqualsAndHashCode(of = "id")
 public class Medico {
 
-    @Id
+    @EmbeddedId
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -56,5 +57,20 @@ public class Medico {
                 ", especialidade=" + especialidade +
                 ", endereco=" + endereco +
                 '}';
+    }
+
+
+    public void atualizarInformacoes(DadosAtualizacaoMedico dados) {
+        if (dados.nome() != null) {
+            this.nome = dados.nome();
+        }
+        if (dados.telefone() != null) {
+            this.telefone = dados.telefone();
+        }
+        if (dados.endereco() != null) {
+            this.endereco.atualizarInformacoesEndereco(dados.endereco());
+        }
+
+
     }
 }
