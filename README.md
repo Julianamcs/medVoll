@@ -49,3 +49,49 @@ Vamos disponibilizar esse protótipo, mas lembrando que é somente para consulta
 A documentação das funcionalidades do projeto ficará em um quadro do Trello com cada uma das funcionalidades. Em cada cartão teremos a descrição de cada funcionalidade, com as regras e validações que vamos implementar ao longo do projeto.
 
 Esse é o nosso objetivo neste curso, aprender a usar o Spring Boot na versão 3 para desenvolvermos o projeto dessa clínica médica, utilizando as tecnologias mencionadas anteriormente.
+
+Transcrição
+Boas-vindas ao curso de Spring Boot 3: aplique boas práticas e proteja uma API Rest!
+
+Me chamo Rodrigo Ferreira e serei o seu instrutor ao longo deste curso, em que vamos aprender como usar as ferramentas do Spring Boot, sendo um framework do Java.
+
+Rodrigo Ferreira é uma pessoa de pele clara, com olhos castanhos e cabelos castanhos e curto. Veste camiseta rosa lisa, e está sentado em uma cadeira preta. Ao fundo, há uma parede lisa com iluminação azul gradiente.
+
+No curso anterior...
+Este é o segundo curso, é importante que você tenha concluído o anterior Curso de Spring Boot 3: desenvolva uma API Rest em Java. Nele, iniciamos o projeto que daremos continuidade.
+
+Recapitulando, no primeiro curso aprendemos como funciona o Spring Boot, a criar um projeto usando Spring initializr e começamos a desenvolver a API Rest.
+
+No caso, fizemos o CRUD (Create, Read, Update e Delete), implementamos a funcionalidade de cadastro, listagem, remoção e atualização. Aprendemos, também, a fazer validações de formulários utilizando o bean validation. Por fim, focamos na paginação e ordenação.
+
+Desenvolvimento de uma API Rest
+CRUD (Create, Read, Update e Delete)
+Validações
+Paginação e ordenação
+Tudo isso foi desenvolvido no curso anterior, e a ideia deste presente curso é dar continuidade ao projeto iniciado. Partiremos do ponto que paramos no curso passado, e aprenderemos novos recursos do framework.
+
+A seguir, vamos relembrar o layout do aplicativo mobile da nossa aplicação:
+
+Protótipo do aplicativo que será trabalhado ao longo deste curso. Nele, há três telas mostradas lado a lado, da esquerda para direita. A primeira tela é a tela inicial, em que há a logo do aplicativo no canto superior direito. Abaixo há três botões retangulares grandes e azuis que ocupam o resto da tela para escolher as seções. De cima para baixo, a ordem dos botões é: Médicos(as), Pacientes e Consultas. A segunda tela é para pesquisar na seção escolhida anteriormente. No caso, mostra os resultados da seção "Médicos(as)". Se não houver um filtro, todos os resultados aparecerão em ordem alfabética. A terceira e última tela é um formulário de cadastro, com os campos a serem preenchidos. Os campos, de cima para baixo, são: Nome completo, especialidade, CRM, e-mail, telefone ou celular, logradouro, número, complemento e cidade.
+Lembrando que focamos na parte de back-end, na API Rest, e continuaremos trabalhando nesse projeto da clínica médica. Desenvolvemos o CRUD de médicos e pacientes, e daremos prosseguimento neste curso.
+
+Objetivos
+Boas práticas na API
+Tratamento de erros
+Autenticação/Autorização
+Tokens JWT
+Os objetivos deste segundo curso são: aprender boas práticas na API referente ao protocolo HTTP. Faremos ajustes na classe controller, para seguir as boas práticas do protocolo HTTP quanto ao retorno dos códigos HTTP e das respostas que a API devolve.
+
+Logo após, realizaremos tratamento de erros. Eventualmente, pode ocorrer um erro na API, e precisamos entender o que o Spring faz ao ocorrer uma exception enquanto o programa é executado, o que é devolvido como resposta para o cliente da API.
+
+Assim, vamos personalizar esses retornos para tratar esses erros da melhor forma possível.
+
+Após isso, focaremos na segurança, no controle de autenticação e de autorização da API. No curso anterior não abordamos isso, logo a nossa API está pública - qualquer pessoa pode enviar requisições para remover, atualizar ou alterar informações da API.
+
+Mas não é dessa forma que desejamos, precisamos ter um controle. Isso será feito na aplicação front-end, porém, na API precisamos ter um código que permite o usuário se autenticar, e também ter um controle de acesso de informações públicas e privadas.
+
+Aprenderemos a aplicar isso com o Spring Security, sendo um módulo do Spring responsável por monitorar esse controle.
+
+No caso, usaremos a autenticação fundamentada em tokens com o padrão JSON Web Token (JWT).
+
+São esses os objetivos do segundo curso, focaremos em boas práticas, tratamento de erros e no controle de acesso, autenticação e autorização, usando tokens.
