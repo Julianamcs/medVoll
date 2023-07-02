@@ -7,7 +7,7 @@ import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.endereco.Endereco;
-import med.voll.api.paciente.DadosAtualizacaoPaciente;
+
 
 
 @Table(name = "medicos")
@@ -59,7 +59,6 @@ public class Medico {
         if (dados.endereco() != null) {
             this.endereco.atualizarInformacoes(dados.endereco());
         }
-
 
     }
 
