@@ -1,4 +1,7 @@
 # MedVoll
+<p align="center">
+  <img alt="MedVoll" src="https://github.com/Julianamcs/medVoll/blob/main/src/main/resources/img/img_bg.png" width="100%">
+</p>
 Spring Boot 3: desenvolva uma API Rest em Java!
 
 #Objetivos
