@@ -10,7 +10,7 @@ import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.*;
 
 @RestController
-@RequestMapping("paciente")
+@RequestMapping("pacientes")
 public class PacienteController {
 
     @Autowired
@@ -30,7 +30,7 @@ public class PacienteController {
 
     @PutMapping
     @Transactional
-    public void AtulizarPaciente(@RequestBody @Valid DadosAtualizacaoPaciente dados) {
+    public void atualizar(@RequestBody @Valid DadosAtualizacaoPaciente dados) {
         var paciente = repository.getReferenceById(dados.id());
         paciente.atualizarInformacoesPaciente(dados);
     }
