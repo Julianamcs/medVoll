@@ -96,13 +96,11 @@ No caso, usaremos a autenticação fundamentada em tokens com o padrão JSON Web
 
 São esses os objetivos do segundo curso, focaremos em boas práticas, tratamento de erros e no controle de acesso, autenticação e autorização, usando tokens.
 
+<p align="center">
+  <img alt="MedVoll" src="https://github.com/Julianamcs/medVoll/blob/main/src/main/resources/img/img%20consulta.png" width="100%">
+</p>
+
 #Transcrição
-
-#acessibilidade Rodrigo Ferreira é uma pessoa de pele clara, com olhos castanhos e cabelos castanhos e curtos. Veste camiseta cinza e está sentado em uma cadeira de encosto preto. Ao fundo, há uma parede lisa com iluminação azul.
-
-A ideia é continuarmos o mesmo projeto que desenvolvemos nos cursos anteriores, mas aprender a usar novos recursos e funcionalidades.
-
-Nos cursos anteriores, aprendemos a:
 
 Desenvolver uma API Rest;
 Desenvolver um CRUD (Create, Read, Update e Delete);
