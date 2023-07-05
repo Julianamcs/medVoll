@@ -95,3 +95,35 @@ Aprenderemos a aplicar isso com o Spring Security, sendo um módulo do Spring re
 No caso, usaremos a autenticação fundamentada em tokens com o padrão JSON Web Token (JWT).
 
 São esses os objetivos do segundo curso, focaremos em boas práticas, tratamento de erros e no controle de acesso, autenticação e autorização, usando tokens.
+
+#Transcrição
+
+#acessibilidade Rodrigo Ferreira é uma pessoa de pele clara, com olhos castanhos e cabelos castanhos e curtos. Veste camiseta cinza e está sentado em uma cadeira de encosto preto. Ao fundo, há uma parede lisa com iluminação azul.
+
+A ideia é continuarmos o mesmo projeto que desenvolvemos nos cursos anteriores, mas aprender a usar novos recursos e funcionalidades.
+
+Nos cursos anteriores, aprendemos a:
+
+Desenvolver uma API Rest;
+Desenvolver um CRUD (Create, Read, Update e Delete);
+Fazer validações;
+Fazer paginação e ordenação das informações;
+Usar boas práticas REST;
+Tratar erros;
+Autenticar e autorizar o controle de acesso com JWT.
+O que aprenderemos neste curso
+Um dos objetivos deste curso é implementarmos a funcionalidade de agendamento de consultas. Anteriormente, desenvolvemos o CRUD de médicos e o de pacientes. Faltou implementar a funcionalidade mais importante do projeto, o agendamento de consultas.
+
+Também aprenderemos a documentar a nossa API para facilitar a vida de quem precisa consumi-la, ou seja, a equipe que desenvolverá o aplicativo mobile ou a aplicação Front-End da nossa API.
+
+Essas pessoas precisam saber quais as URLs da nossa API, os métodos HTTP suportados, os parâmetros, o formato, o que é devolvido pela API e assim por diante. Geraremos uma documentação automática usando uma biblioteca que se integra com o Spring Boot.
+
+Também aprenderemos a fazer testes automatizados em um projeto com Spring Boot. Já que implementamos repository e controllers, precisaremos fazer testes automatizados destes componentes.
+
+Mas como escrever um teste com a biblioteca JUnit padrão do Java para testar essas classes e componentes que dependem de informações e recursos do Spring? Aprenderemos a fazer isso neste curso.
+
+Por fim, aprenderemos sobre o build do projeto. Imagine que terminamos o nosso projeto e queremos fazer o seu deploy em algum servidor, seja um servidor Cloud ou interno da empresa.
+
+Como geramos o pacote do projeto e fazemos o build? Como funciona o build de uma aplicação que utiliza o Spring Boot? Como executamos o projeto dentro de um servidor independentemente da plataforma utilizada? Também falaremos de tudo isso neste curso.
+
+Além disso, continuaremos trabalhando no projeto da clínica médica, com mesmo quadro Trello com o detalhamento da funcionalidade e aprenderemos a usar esses recursos ao longo do curso.
