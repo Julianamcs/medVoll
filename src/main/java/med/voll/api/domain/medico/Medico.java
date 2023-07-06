@@ -7,7 +7,6 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import med.voll.api.domain.endereco.Endereco;
 
-
 @Table(name = "medicos")
 @Entity(name = "Medico")
 @Getter
@@ -43,10 +42,6 @@ public class Medico {
         this.endereco = new Endereco(dados.endereco());
     }
 
-    public void excluir() {
-        this.ativo = false;
-    }
-
     public void atualizarInformacoes(DadosAtualizacaoMedico dados) {
         if (dados.nome() != null) {
             this.nome = dados.nome();
@@ -60,4 +55,7 @@ public class Medico {
 
     }
 
+    public void excluir() {
+        this.ativo = false;
+    }
 }
